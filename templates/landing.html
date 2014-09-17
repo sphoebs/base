@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Additional title{% endblock %}
+
+    {% block header %} 
+      {% endblock %} 
+
+{% block content %}
+
+
+
+<div id="landing-main">
+
+content here
+
+    {%  if not user %}
+    <a href = "{{facebook}}">fb login</a>
+    <a href = "{{google}}">google login</a>
+
+    
+    {% else %}
+    
+    Hello {{user.first_name}}
+    
+    {% endif %}
+    
+    
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script>
+	$(document).ready(function(){
+
+	});
+</script>
+{% endblock %}

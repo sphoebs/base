@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TITLE: {% block title %}{% endblock %}</title>
+
+<link rel="stylesheet" type="text/css" href="/static/css/pmstyle.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+        {% block header %} 
+    <header>
+
+        
+      
+    </header>
+      {% endblock %} 
+    
+        
+    <section>
+    {% block content %}
+
+        
+       
+        
+        
+ 
+     {% endblock %}
+    </section>
+      
+
+
+    
+<footer>
+
+ 
+
+
+
+
+</footer>    
+
+    
+    {% block scripts %}
+
+     {% endblock %}
+</body>
+    
+</html>
